@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html{
+    /*background-color: #16161a;*/
+    background-image: linear-gradient(#16161a,#242629);
+    min-height: 967px;
+}
+
+p{
+    color: #94a1b2;
+    text-align: justify;
+}
+
+h1{
+    font-weight: 100;
+    font-size: 3rem;
+    margin-TOP: 80px;
+}
+
+.resume-h2{
+    font-weight: 100;
+    font-size: 2rem;
+    margin-TOP: 80px;
+}
+
+.resume-mid-titles{
+    font-weight:lighter;
+    text-decoration: underline;
+}
+
+
+
+.index-h2{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+
+.resume-top-title{
+    font-weight: lighter;
+    font-size: 1.1rem;
+    opacity: .5;
+}
+/*NAV*/
+header{
+    display:flex;
+    background-color: #242629;
+    background-image: linear-gradient(#242629 55%, #16161a);
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+}
+
+hr{
+    margin-top:30px;
+    margin-bottom: 30px;
+    width: 200px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: auto;
+    height: 48px
+}
+
+.navbar li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 48px;    
+}
+
+.navbar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:  #fffffe;
+    padding-left: .5em;
+    padding-right: .5em;
+    height: 48px;
+}
+
+.navbar a:hover{
+    color:  #7f5af0;
+    border-bottom: 3px solid #7f5af0;
+    padding-top: 3px;
+}
+
+/*MAIN*/
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 880px;
+    align-items: center;
+    margin: auto auto 40px auto;
+}
+
+.main-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects img{
+    width: 150px;
+    border-radius: 50%;
+    margin:10px;
+}
+
+.profile-pic{
+    width: 150px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.section-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fffffe;
+    opacity: .85;
+    text-align: center;
+    margin: 5px 0px 15px 0px;
+}
+
+.section-text{
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.resume-text{
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-title section ul{
+    list-style-type: none;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.about-img{
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 30px
+}
+
+.contact-form fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5em
+
+}
+
+.contact-form div input{
+    margin: 5px;
+}
+
+.contact-image{
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.email input{
+    width: 296px;
+}
+
+.message input{
+    width: 296px;
+    min-height: 70px;
+}
+
+
+/*footer*/
+
+footer{
+    display: flex;
+    /*background-image: linear-gradient(#232425, #242629);*/
+    background-color: #242629;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+.sink-footer{ 
+    /*Sends footer to the bottom in pages 
+    without enough content to scroll down.*/
+    position: absolute;
+    bottom: 0;
+}
+
+footer ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+    margin: 2px 5px 2px 5px;
+    width: 36px;
+    height: 36px
+}
+
+footer a:hover{
+    border-bottom: 3px solid #7f5af0;
+    padding-top: 3px;
+}
+
+.footer-icon{
+    width: 30px;
+    height: 30px;
+    margin: 2px 2px 2px 2px;
+}
+
+.footer-info{
+    text-align: center;
+    margin-right: auto;
+}
