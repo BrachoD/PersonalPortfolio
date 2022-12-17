@@ -22,6 +22,10 @@ h1{
     margin-TOP: 80px;
 }
 
+ul{
+    padding:0;
+}
+
 .resume-h2{
     font-weight: 100;
     font-size: 2rem;
@@ -48,14 +52,8 @@ h1{
     opacity: .5;
 }
 /*NAV*/
-header{
-    display:flex;
-    background-color: #242629;
-    background-image: linear-gradient(#242629 55%, #16161a);
-    justify-content: center;
-    align-items: center;
-    height: 48px;
-}
+
+
 
 hr{
     margin-top:30px;
@@ -70,42 +68,7 @@ main{
     
 }
 
-.navbar ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    width: auto;
-    height: 48px
-}
 
-.navbar li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 48px;    
-}
-
-.navbar a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color:  #fffffe;
-    padding-left: .5em;
-    padding-right: .5em;
-    height: 48px;
-}
-
-.navbar a:hover{
-    color:  #7f5af0;
-    border-bottom: 3px solid #7f5af0;
-    padding-top: 3px;
-}
 
 /*MAIN*/
 main{
@@ -124,12 +87,20 @@ main{
     align-items: center;
 }
 
+
 .projects img{
     width: 150px;
     border-radius: 50%;
-    margin:10px;
+    margin:0;
 }
 
+.card{
+    align-items: center;
+}
+
+.projects li{
+    margin: 1rem;
+}
 .profile-pic{
     width: 150px;
     border-radius: 50%;
@@ -172,9 +143,9 @@ main{
 .projects{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     list-style-type: none;
-    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-img{
@@ -219,7 +190,7 @@ main{
 
 /*footer*/
 
-footer{
+.alt-footer{
     display: flex;
     /*background-image: linear-gradient(#232425, #242629);*/
     background-color: #242629;
@@ -236,13 +207,13 @@ footer{
     bottom: 0;
 }
 
-footer ul{
+.footer-ul{
     display: flex;
     list-style-type: none;
     margin-right: 30px;
 }
 
-footer a{
+.alt-footer a{
     display: flex;
     align-items: center;
     margin: 2px 5px 2px 5px;
@@ -250,7 +221,7 @@ footer a{
     height: 36px
 }
 
-footer a:hover{
+.alt-footer a:hover{
     border-bottom: 3px solid #7f5af0;
     padding-top: 3px;
 }
