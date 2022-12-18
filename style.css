@@ -24,6 +24,8 @@ h1{
 
 ul{
     padding:0;
+    margin: 0;
+    list-style-type: none;
 }
 
 .resume-h2{
@@ -61,12 +63,7 @@ hr{
     width: 200px;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
+
 
 
 
@@ -190,9 +187,13 @@ main{
 
 /*footer*/
 
+/*footer{
+    padding: 0;
+}
+
 .alt-footer{
     display: flex;
-    /*background-image: linear-gradient(#232425, #242629);*/
+    
     background-color: #242629;
     align-items: center;
     position: relative;
@@ -201,16 +202,16 @@ main{
 }
 
 .sink-footer{ 
-    /*Sends footer to the bottom in pages 
-    without enough content to scroll down.*/
+    Sends footer to the bottom in pages 
+    without enough content to scroll down.
     position: absolute;
     bottom: 0;
 }
 
 .footer-ul{
-    display: flex;
+    
     list-style-type: none;
-    margin-right: 30px;
+    
 }
 
 .alt-footer a{
@@ -235,4 +236,4 @@ main{
 .footer-info{
     text-align: center;
     margin-right: auto;
-}
+}*/
