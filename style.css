@@ -5,6 +5,16 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+#main-grid{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:    "header"
+                            "main_content"
+                            "footer";
+}
+
+
+
 body{
     /*background-color: #16161a;*/
     background-image: linear-gradient(#16161a,#242629);
@@ -44,6 +54,7 @@ ul{
 .index-h2{
     font-weight: 300;
     font-size: 1rem;
+    max-width: 90%;
 }
 
 
@@ -65,18 +76,20 @@ hr{
     width: 200px;
 }
 
-
-
-
+header{
+    grid-area: header;
+}
 
 /*MAIN*/
 main{
+    grid-area: main_content;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 880px;
+    max-width: 885px;
     align-items: center;
-    margin: auto auto 40px auto;
+    margin: auto auto auto auto;
+    min-height: 900px
 }
 
 .main-section{
@@ -88,7 +101,7 @@ main{
 
 
 .projects img{
-    width: 125px;
+    width: 90%;
     border-radius: 50%;
     margin:0;
 }
@@ -101,6 +114,12 @@ main{
 .projects li{
     margin: .5rem;
 }
+
+.project-list{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .profile-pic{
     width: 150px;
     border-radius: 50%;
@@ -120,7 +139,8 @@ main{
 .section-text{
     display: flex;
     flex-wrap: wrap;
-    width: 450px;
+    width: 85%;
+    max-width: 450px;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -151,6 +171,10 @@ main{
 .about-img{
     width: 200px;
     margin-bottom: 15px;
+}
+
+.about{
+    margin-bottom: 2rem;
 }
 
 .form-control-width{
@@ -202,9 +226,26 @@ main{
 
 
 /*footer*/
+
+footer{
+    grid-area: footer;
+}
+
+.footer-text{
+    margin: 0;
+}
+
 .footer-background-color{
     background-color: #242629;
     
+}
+
+.sink-footer{ 
+    /*Sends footer to the bottom in pages 
+    without enough content to scroll down.*/
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 /*footer{
@@ -221,12 +262,7 @@ main{
     margin-top: auto;
 }
 
-.sink-footer{ 
-    Sends footer to the bottom in pages 
-    without enough content to scroll down.
-    position: absolute;
-    bottom: 0;
-}
+
 
 .footer-ul{
     
@@ -257,3 +293,18 @@ main{
     text-align: center;
     margin-right: auto;
 }*/
+
+@media screen and (max-width:420px) {
+    footer nav div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footer-text{
+        margin-bottom: 3px;
+    }
+
+    
+}
+
