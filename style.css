@@ -7,6 +7,7 @@
 
 #main-grid {
     display: grid;
+    min-height: 100vh;
     grid-template-rows: auto auto auto;
     grid-template-areas: "header"
         "main_content"
@@ -90,7 +91,7 @@ main {
     max-width: 885px;
     align-items: center;
     margin: auto auto auto auto;
-    min-height: 91.2vh;
+    min-height: 90.5vh;
 }
 
 .main-section {
@@ -232,6 +233,13 @@ footer {
     grid-area: footer;
 }
 
+footer a{
+    color: #fffffe;
+    opacity: .85;
+    margin-left: .25rem;
+    margin-right: .25rem;
+}
+
 .footer-text {
     margin: 0;
 }
@@ -254,6 +262,7 @@ footer {
 
     /*This media query makes the projects.html looks different in tablet.
     Not that it is really necessary but just to try a different design.*/
+    
     /*
     main{
         
