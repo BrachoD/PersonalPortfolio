@@ -1,0 +1,70 @@
+@media screen and (max-width:930px) {
+
+
+    /*This media query makes the projects.html looks different in tablet.
+    Not that it is really necessary but just to try a different design.*/
+
+    /*
+    main{
+        
+        min-height: 1076px;
+    }*/
+
+    .project-list-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    body {
+        /*background-color: #16161a;*/
+        background-image: linear-gradient($primary, $secondary 70%);
+
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        width: 380px
+    }
+
+}
+
+@media screen and (max-width:430px) {
+
+    /*This media query was necessary to make the 
+    footer get a different style in phone devices.*/
+
+    footer {
+        nav {
+            div {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
+    .footer-text {
+        margin-bottom: 3px;
+    }
+
+
+
+    main {
+        min-height: 850px;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-list-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

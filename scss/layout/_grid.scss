@@ -1,0 +1,8 @@
+#main-grid {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header"
+        "main_content"
+        "footer";
+}

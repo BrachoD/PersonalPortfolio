@@ -1,0 +1,38 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 30px;
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .5em
+    }
+
+    div {
+        input {
+            margin: 5px;
+        }
+    }
+}
+
+.contact-image {
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.form-control-width {
+    max-width: 45%;
+}
+
+.message {
+    min-height: 100px;
+
+    input {
+        width: 296px;
+        min-height: 70px;
+    }
+}

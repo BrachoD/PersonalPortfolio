@@ -1,0 +1,21 @@
+@import './base/reset';
+@import './base/typo';
+
+@import './utilities/variables';
+
+@import './layout/body';
+@import './layout/grid';
+
+@import './components/card';
+@import './components/form';
+@import './components/list';
+@import './components/navbar';
+@import './components/text';
+@import './components/titles';
+
+
+@import './general/about';
+@import './general/footer';
+@import './general/header';
+@import './general/main';
+@import './general/projects';

@@ -1,0 +1,29 @@
+main {
+    grid-area: main_content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 885px;
+
+    align-items: center;
+    margin: auto auto auto auto;
+    min-height: 977px;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+        max-width: 320px;
+    }
+
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 200px;
+}

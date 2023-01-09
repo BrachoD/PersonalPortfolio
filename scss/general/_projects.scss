@@ -1,0 +1,29 @@
+.projects {
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 90%;
+        border-radius: 50%;
+        margin: 0;
+    }
+
+    li {
+        margin: .5rem;
+    }
+}
+
+.project-list {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin: 15px;
+}
