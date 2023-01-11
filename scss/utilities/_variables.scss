@@ -1,7 +1,8 @@
-$primary: #16161a;
-$secondary: #242629;
-$paragraph-color: #94a1b2;
+$colors: (
+    primary: #16161a,
+    secondary: #242629,
+    paragraph-color: #94a1b2,
+);
 
-
-$body-gradient: linear-gradient($primary, $secondary);
-$navbar-gradient: linear-gradient($secondary 55%, $primary);
+$body-gradient: linear-gradient(map-get($colors, primary), map-get($colors, secondary));
+$navbar-gradient: linear-gradient(map-get($colors, secondary) 55%, map-get($colors, primary));

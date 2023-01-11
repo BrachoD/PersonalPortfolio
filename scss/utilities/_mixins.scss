@@ -1,0 +1,6 @@
+@mixin flex-column-center {
+    /*Applied to form.scss and to titles.scss> .section-title*/
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}

@@ -1,5 +1,5 @@
 p {
-    color: $paragraph-color;
+    color: map-get($colors, paragraph-color);
 }
 
 .section-text {
@@ -15,9 +15,11 @@ p {
 .resume-text {
     display: flex;
     flex-wrap: wrap;
-    width: 450px;
+    max-width: 450px;
     margin-top: 10px;
     margin-bottom: 10px;
     justify-content: center;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }

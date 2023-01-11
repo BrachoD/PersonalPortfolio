@@ -1,14 +1,10 @@
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     color: white;
     margin-top: 30px;
 
     fieldset {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-center;
         padding: .5em
     }
 

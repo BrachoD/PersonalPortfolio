@@ -19,6 +19,8 @@ h1 {
 .resume-mid-titles {
     font-weight: lighter;
     text-decoration: underline;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .resume-top-title {
@@ -28,13 +30,19 @@ h1 {
 }
 
 .section-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     color: #fffffe;
     opacity: .85;
     text-align: center;
     margin: 5px 0px 15px 0px;
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
 
     section {
 
