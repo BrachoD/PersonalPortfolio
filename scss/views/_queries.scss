@@ -17,7 +17,7 @@
 
     body {
         /*background-color: #16161a;*/
-        background-image: linear-gradient($primary, $secondary 70%);
+        background-image: linear-gradient(map-get($colors, primary), map-get($colors, secondary) 70%);
 
     }
 

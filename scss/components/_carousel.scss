@@ -1,0 +1,19 @@
+.carousel {
+    width: 350px;
+    height: auto;
+    margin-bottom: 9px;
+}
+
+.carousel-item {
+    transition: transform 0s ease-in-out;
+
+    img:hover{
+        cursor: pointer;
+    }
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 0s;
+}
+
