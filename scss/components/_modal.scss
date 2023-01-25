@@ -29,6 +29,7 @@
             width: 80px;
             margin-top: 10px;
             margin-bottom: 10px;
+            margin-right: 10px;
         }
     }
 
@@ -79,4 +80,9 @@
 .modal-deploy-button:active {
     position: relative;
     top: 1px;
+}
+
+.modal-content{
+    justify-content: center;
+    align-items: center;
 }

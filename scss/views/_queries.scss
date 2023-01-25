@@ -1,14 +1,26 @@
+@media screen and (max-width:991px) {
+
+    .modal-pictures-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .modal-icons-container{
+            display: none;
+        }
+
+        .carousel{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    
+    
+
+    
+}
+
 @media screen and (max-width:930px) {
-
-
-    /*This media query makes the projects.html looks different in tablet.
-    Not that it is really necessary but just to try a different design.*/
-
-    /*
-    main{
-        
-        min-height: 1076px;
-    }*/
 
     .project-list-container {
         display: flex;
@@ -16,7 +28,6 @@
     }
 
     body {
-        /*background-color: #16161a;*/
         background-image: linear-gradient(map-get($colors, primary), map-get($colors, secondary) 70%);
 
     }
@@ -24,7 +35,7 @@
     .projects {
         display: flex;
         flex-wrap: wrap;
-        width: 380px
+        width: 384px;
     }
 
 }

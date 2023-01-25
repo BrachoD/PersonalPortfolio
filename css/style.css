@@ -14,17 +14,36 @@ body {
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto auto auto;
-  grid-template-areas: "header" "main_content" "footer"; }
+  grid-template-areas: "header"
+ "main_content"
+ "footer"; }
 
 .card {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding-top: 15px; }
+  justify-content: center;
+  padding-top: 15px;
+  min-height: 334px; }
   .card img {
     width: 90%;
     border-radius: 50%;
     margin: 0; }
   .card img:hover {
     cursor: pointer; }
+
+.card-body {
+  color: #fffffe;
+  opacity: .85;
+  text-align: center;
+  margin: 5px 0px 0px 0px; }
+  .card-body h4 {
+    font-size: 1.5rem; }
+  .card-body h5 {
+    font-size: 1rem; }
+
+.card-text {
+  text-align: center; }
 
 .carousel {
   width: 350px;
@@ -97,7 +116,8 @@ ul {
   .modal-pictures-container .modal-icons-container img {
     width: 80px;
     margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-right: 10px; }
   .modal-pictures-container .carousel {
     margin-left: 8%;
     margin-right: 4%; }
@@ -135,6 +155,10 @@ ul {
 .modal-deploy-button:active {
   position: relative;
   top: 1px; }
+
+.modal-content {
+  justify-content: center;
+  align-items: center; }
 
 .navbar-background-color {
   background-image: linear-gradient(#242629 55%, #16161a); }
@@ -281,24 +305,27 @@ hr {
   display: flex;
   flex-wrap: wrap; }
 
+@media screen and (max-width: 991px) {
+  .modal-pictures-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .modal-pictures-container .modal-icons-container {
+      display: none; }
+    .modal-pictures-container .carousel {
+      margin-left: 0;
+      margin-right: 0; } }
+
 @media screen and (max-width: 930px) {
-  /*This media query makes the projects.html looks different in tablet.
-    Not that it is really necessary but just to try a different design.*/
-  /*
-    main{
-        
-        min-height: 1076px;
-    }*/
   .project-list-container {
     display: flex;
     justify-content: center; }
   body {
-    /*background-color: #16161a;*/
     background-image: linear-gradient(#16161a, #242629 70%); }
   .projects {
     display: flex;
     flex-wrap: wrap;
-    width: 380px; } }
+    width: 384px; } }
 
 @media screen and (max-width: 430px) {
   /*This media query was necessary to make the 
